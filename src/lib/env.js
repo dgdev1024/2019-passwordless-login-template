@@ -62,6 +62,7 @@ const loadDefaultEnv = (key, value) => {
 checkRequiredEnv('NODE_ENV');
 checkRequiredEnv('DATABASE_URI');
 checkRequiredEnv('EMAIL_TRANSPORT_METHOD', ['oauth2', 'userpass', 'local']);
+checkRequiredEnv('EMAIL_TRANSPORT_ADDRESS');
 checkRequiredEnv('JWT_SECRET');
 
 // Load default environment variables here.
